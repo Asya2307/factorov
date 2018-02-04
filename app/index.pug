@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Заголовок
+    body
+    section.companyform
+        div.clearfix
+            img.img_secret(src=require("./images/secret.png"))
+        img.img_delo(src=require("./images/delo.png"))
+        .companyform_container
+            mixin input(name, id)
+                .input_wrapper
+                    label(for = "companyform_input-" + id)= name
+                    input(type="text" id = "companyform_input-" + id)
+            +input('Полное ФИО', 'name')
+            +input('Год рождения', 'year')
+            +input('Место жительства', 'location')
+            +input('Скайп', 'skype')
+            +input('Почта', 'mail')
+            h3.companyform_caption Расскажите о себе чекбоксами
+            p.companyform_txt Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
+            #checkboxgen
+            h3.companyform_caption Уровень владения JavaScript
+            #slidergen
+            h3.companyform_caption Расскажите о себе словами
+            p.companyform_txt Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR.
+            textarea.companyform_textarea
+            h3.companyform_caption Какие у вас планы на будущее?
+            p.companyform_txt Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
+            mixin radio(name, id)
+                .radio_wrapper
+                    label(for = "companyform_radio-" + id)= name
+                    input(type="radio" id = "companyform_radio-" + id)
+            +radio('Верстать', 1)
+            +radio('Прокачиваться в js', 2)
+            +radio('Менеджерство', 3)
+            +radio('Другое', 4)
+            .input_wrapper
+                    label(for = "companyform_date") Дата заполнения
+                    input(type="date" id = "companyform_date")
+
+    

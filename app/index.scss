@@ -1,0 +1,27 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.companyform{
+    background-image: url(./images/bg.png);
+    max-width: 1180px;
+    margin: auto;
+    padding: 2.5rem 3rem;
+    .img_secret{
+        float: right;
+        width: 15rem;
+    }
+    .img_delo{
+        margin: auto;
+        display: block;
+        width: 15rem;
+    }
+}
