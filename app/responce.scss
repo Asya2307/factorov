@@ -1,0 +1,37 @@
+@media (max-width: 900px) {
+    .companyform {
+        #checkboxgen {
+            .companyform_checkboxwrapper{
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    html{
+        font-size: 10px;
+    }
+    .companyform {
+        padding: 2rem;
+        .img_delo, .img_secret{
+            width: 10rem;
+        }
+        .img_delo{
+            margin-bottom: 2rem;
+            margin-top: 1rem;
+        }
+        .companyform_caption{
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+        #checkboxgen {
+            .companyform_checkboxwrapper{
+                width: 100%;
+            }
+        }
+        .input_wrapper{
+            flex-wrap: wrap;
+        }
+    }
+}

@@ -11,54 +11,57 @@
     <div class="clearfix"><img class="img_secret" src="images/secret.png"></div><img class="img_delo" src="images/delo.png">
     <div class="companyform_container">
             <div class="input_wrapper">
-              <label for="companyform_input-name">Полное ФИО</label>
-              <input type="text" id="companyform_input-name">
+              <label class="companyform_input-label" for="companyform_input-name">Полное ФИО</label>
+              <input class="companyform_input" type="text" id="companyform_input-name">
             </div>
             <div class="input_wrapper">
-              <label for="companyform_input-year">Год рождения</label>
-              <input type="text" id="companyform_input-year">
+              <label class="companyform_input-label" for="companyform_input-year">Год рождения</label>
+              <input class="companyform_input" type="text" id="companyform_input-year">
             </div>
             <div class="input_wrapper">
-              <label for="companyform_input-location">Место жительства</label>
-              <input type="text" id="companyform_input-location">
+              <label class="companyform_input-label" for="companyform_input-location">Место жительства</label>
+              <input class="companyform_input" type="text" id="companyform_input-location">
             </div>
             <div class="input_wrapper">
-              <label for="companyform_input-skype">Скайп</label>
-              <input type="text" id="companyform_input-skype">
+              <label class="companyform_input-label" for="companyform_input-skype">Скайп</label>
+              <input class="companyform_input" type="text" id="companyform_input-skype">
             </div>
             <div class="input_wrapper">
-              <label for="companyform_input-mail">Почта</label>
-              <input type="text" id="companyform_input-mail">
+              <label class="companyform_input-label" for="companyform_input-mail">Почта</label>
+              <input class="companyform_input" type="text" id="companyform_input-mail">
             </div>
       <h3 class="companyform_caption">Расскажите о себе чекбоксами</h3>
       <p class="companyform_txt">Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.</p>
       <div id="checkboxgen"></div>
       <h3 class="companyform_caption">Уровень владения JavaScript</h3>
-      <div id="slidergen"></div>
+      <div class="companyform_sliderarea">
+        <div id="slidergen"></div>
+        <div class="slider_line"><span class="slider_txt">Не владею</span><span class="slider_txt">Использую готовые решения</span><span class="slider_txt">Использую готовые решения и умею их переделывать</span><span class="slider_txt">Пишу сложный JS с нуля</span></div>
+      </div>
       <h3 class="companyform_caption">Расскажите о себе словами</h3>
       <p class="companyform_txt">Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR.</p>
       <textarea class="companyform_textarea"></textarea>
       <h3 class="companyform_caption">Какие у вас планы на будущее?</h3>
       <p class="companyform_txt">Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.</p>
             <div class="radio_wrapper">
-              <label for="companyform_radio-1">Верстать</label>
-              <input type="radio" id="companyform_radio-1">
+              <input class="companyform_radio" type="radio" name="companyform_radio" id="companyform_radio-1"><span class="companyform_radio-icon"></span>
+              <label class="companyform_radio-label" for="companyform_radio-1">Верстать</label>
             </div>
             <div class="radio_wrapper">
-              <label for="companyform_radio-2">Прокачиваться в js</label>
-              <input type="radio" id="companyform_radio-2">
+              <input class="companyform_radio" type="radio" name="companyform_radio" id="companyform_radio-2"><span class="companyform_radio-icon"></span>
+              <label class="companyform_radio-label" for="companyform_radio-2">Прокачиваться в js</label>
             </div>
             <div class="radio_wrapper">
-              <label for="companyform_radio-3">Менеджерство</label>
-              <input type="radio" id="companyform_radio-3">
+              <input class="companyform_radio" type="radio" name="companyform_radio" id="companyform_radio-3"><span class="companyform_radio-icon"></span>
+              <label class="companyform_radio-label" for="companyform_radio-3">Менеджерство</label>
             </div>
             <div class="radio_wrapper">
-              <label for="companyform_radio-4">Другое</label>
-              <input type="radio" id="companyform_radio-4">
+              <input class="companyform_radio" type="radio" name="companyform_radio" id="companyform_radio-4"><span class="companyform_radio-icon"></span>
+              <label class="companyform_radio-label" for="companyform_radio-4">Другое</label>
             </div>
       <div class="input_wrapper">
-        <label for="companyform_date">Дата заполнения</label>
-        <input type="date" id="companyform_date">
+        <label class="companyform_input-label" for="companyform_date">Дата заполнения</label>
+        <input class="companyform_input companyform_input-date" type="date" id="companyform_date">
       </div>
     </div>
   </section>

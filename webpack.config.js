@@ -10,6 +10,7 @@ const uglifyJs = require('./webpack/js.uglify');
 const images = require('./webpack/images');
 const cssminification = require('./webpack/css.minification');
 const fonts = require('./webpack/fonts');
+const babel = require('./webpack/babel');
 
 const PATH = {
     source: path.join(__dirname, 'app'),
@@ -37,6 +38,7 @@ const common = merge([
         ]
     },
     pug(),
+    babel(),
     extractCSS(),
     images(),
     fonts()

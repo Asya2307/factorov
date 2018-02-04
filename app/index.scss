@@ -57,8 +57,10 @@ body{
             width: auto;
             padding-right: 0;
             text-align: center;
-            margin-top: 5rem;
         }
+    }
+    .input_wrapper.input_datewrapper{
+        margin-top: 5rem;
     }
     .companyform_caption{
         font-size: 1.71rem;
@@ -167,6 +169,11 @@ body{
         }
     }
     .companyform_sliderarea{
+        margin-top: 1rem;
+        overflow: hidden;
+        #slidergen_slider{
+            max-width: 100%;
+        }
         #slidergen_knob {
             background: url(./images/slider.png) no-repeat 50%;
             background-size: contain;

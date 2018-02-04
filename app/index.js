@@ -1,6 +1,8 @@
 import './fonts.scss';
 import './index.scss';
 import 'normalize.css';
+import './responce.scss';
+const autosize = require('autosize');
 const slider = require('./slider.js');
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -38,9 +40,8 @@ document.addEventListener('DOMContentLoaded', function() {
     'jQuery', 'Знаю/изучаю Angular', 'Знаю/изучаю React', 'Знаю/изучаю Node.js'];
 
     checkboxManipulation.checkboxGenerator('checkboxgen', checkboxArray);
-
-
     const mysl1 = new slider('slidergen', 0, 100, 5);
+    autosize(document.querySelector('textarea'));
 
  }, false);
 

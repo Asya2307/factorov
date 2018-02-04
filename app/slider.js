@@ -18,11 +18,12 @@ module.exports = function(elemId, range1, range2, step) {
 	knob.className = 'knob';
     slider.appendChild(knob); // добавляем его в документ
     
-    sliderWidth = document.getElementById('slidergen_knob').offsetWidth;
+    var sliderWidth = document.getElementById('slidergen_knob').offsetWidth;
+    
 
     var point = (sliderWidth-knobWidth-3)/(range2-range1);
 	// point - количество пикселей на единицу значения
-
+    //Изменение разрешения
 
 	knob.style.left = 0;			// бегунок в нулевое значение
 	knob.style.width = knobWidth+'px';
@@ -106,5 +107,9 @@ module.exports = function(elemId, range1, range2, step) {
 
 	// объявляем функции setValue2 и getValue как методы класса
 	this.setValue = setValue2;
-	this.getValue = getValue;
+    this.getValue = getValue;
+    
+    var slidergenEl = document.getElementById('slidergen');
+
+    
 } // конец класса
