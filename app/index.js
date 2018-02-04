@@ -14,9 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 innerData += 
                     '<div class="companyform_checkboxwrapper">' +
                         '<input type="checkbox" id="companyform_checkbox'+i+'">' +
-                        '<span class="companyform_checkbox"></span>' +
-                        '<label class="companyform_checkbox-label" for="companyform_checkbox'+i+'">' 
-                        + element + 
+                        '<label class="companyform_checkbox-label" for="companyform_checkbox'+i+'">' +
+                        '<span class="companyform_checkbox"></span>' + 
+                        element + 
                         '</label>' +
                     '</div>';
             });

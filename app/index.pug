@@ -39,8 +39,9 @@ html(lang="en")
             mixin radio(name, id)
                 .radio_wrapper
                     input.companyform_radio(type="radio" name="companyform_radio" id = "companyform_radio-" + id)
-                    span.companyform_radio-icon
-                    label.companyform_radio-label(for = "companyform_radio-" + id)= name
+                    label.companyform_radio-label(for = "companyform_radio-" + id)
+                        span.companyform_radio-icon
+                        =name
             +radio('Верстать', 1)
             +radio('Прокачиваться в js', 2)
             +radio('Менеджерство', 3)
