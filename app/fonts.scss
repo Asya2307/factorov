@@ -16,6 +16,13 @@
         url('./fonts/pt-sans-bold.ttf') format('ttf')
 }
 
+@font-face {
+  font-family: 'Courier New';
+  src: local('Courier New'),
+      url('./fonts/courier-new.woff2') format('woff2'), 
+      url('./fonts/courier-new.woff') format('woff'),
+      url('./fonts/courier-new.ttf') format('ttf')
+}
 html{
   font-size: calc(7px + 0.55vw);
   font-family: 'PT Sans';

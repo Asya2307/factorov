@@ -12,9 +12,11 @@
 }
 .companyform{
     background-image: url(./images/bg.png);
-    max-width: 1180px;
-    margin: auto;
     padding: 2.5rem 3rem;
+    .companyform_container{
+        width: 90%;
+        margin: auto;
+    }
     .img_secret{
         float: right;
         width: 15rem;
@@ -23,5 +25,98 @@
         margin: auto;
         display: block;
         width: 15rem;
+        margin-bottom: 4rem;
+    }
+    .input_wrapper{
+        display: flex;
+        line-height: 2.2rem;
+        margin-bottom: 1.5rem;
+        align-items: flex-end;
+        .companyform_input-label{
+            font-weight: bold;
+            font-size: 1.6rem;
+            white-space:  nowrap;
+            margin-right:  1rem;
+        }
+        .companyform_input{
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid black;
+            outline: none;
+            font-size: 2.1rem;
+            padding: 0.2rem 1rem;
+            font-family: 'Courier New';
+        }
+        .companyform_input-date{
+            width: auto;
+            padding-right: 0;
+            text-align: center;
+            margin-top: 5rem;
+        }
+    }
+    .companyform_caption{
+        font-size: 1.71rem;
+        line-height: 2;
+        margin-top: 3rem;
+    }
+    .companyform_txt{
+        font-size: 1.07rem;
+        line-height: 1.8;
+        color: #3d3d3d;
+    }
+    .companyform_textarea{
+        max-width: 100%;
+        min-width: 100%;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        font-size: 2.1rem;
+        padding: 0.2rem 1rem;
+        font-family: 'Courier New';
+        background-image: linear-gradient(to top, black 2px, transparent 2px);
+        background-repeat-x: no-repeat;
+        background-repeat-y: repeat;
+        background-position: 0 0%;
+        background-size: 100% 3rem;
+        line-height: 3rem;
+        min-height: 9rem;
+    }
+    .radio_wrapper{
+        display: inline-block;
+        font-weight: bold;
+        font-size: 1.6rem;
+        line-height: 2;
+        display: inline-flex;
+        align-items: center;
+        .companyform_radio{
+            display: none;
+        }
+        .companyform_radio-icon{
+            display: inline-block;
+            height: 2.5rem;
+            width: 2.5rem;
+            background: url(./images/radio.png) no-repeat 50%;
+            background-size: contain;
+            position: relative;
+        }
+        .companyform_radio-label{
+            margin-right: 1rem;
+        }
+        .companyform_radio-icon::before{
+            content: '';
+            position: absolute;
+            height: 1.3rem;
+            width: 1.3rem;
+            top: 0; left: 0; right: 0; bottom: 0;
+            margin: auto;
+            background: url(./images/radio_checked.png) no-repeat 50% 41%;
+            background-size: contain;
+            opacity: 0;
+            transition: all linear 0.2s;
+        }
+        .companyform_radio:checked + .companyform_radio-icon::before{
+            opacity: 1;
+        }
     }
 }
