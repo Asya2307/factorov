@@ -11,17 +11,26 @@ document.addEventListener('DOMContentLoaded', function() {
             arr.forEach((element, i) => {
                 innerData += 
                     '<div class="companyform_checkboxwrapper">' +
+                        '<input type="checkbox" id="companyform_checkbox'+i+'">' +
                         '<span class="companyform_checkbox"></span>' +
                         '<label class="companyform_checkbox-label" for="companyform_checkbox'+i+'">' 
                         + element + 
                         '</label>' +
-                        '<input type="checkbox" id="companyform_checkbox'+i+'">' +
                     '</div>';
             });
             document.getElementById(checkboxgen).innerHTML = innerData;
         },
         checkboxSort: function(checkboxArray){
-            return checkboxArray.sort();
+            let map = checkboxArray.map(function(e, i) {
+                return { index: i, value: e.toLowerCase() };
+            });
+            map.sort(function(a, b) {
+                return +(a.value > b.value) || +(a.value === b.value) - 1;
+            });
+            let result = map.map(function(e) {
+                return checkboxArray[e.index];
+            });
+            return result;
         }
     };
 
