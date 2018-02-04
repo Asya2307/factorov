@@ -166,4 +166,40 @@ body{
             opacity: 1;
         }
     }
+    .companyform_sliderarea{
+        #slidergen_knob {
+            background: url(./images/slider.png) no-repeat 50%;
+            background-size: contain;
+            position: relative;
+        }
+        .slider_line{
+            display: flex;
+            justify-content: space-between;
+            border-top: 2px solid black;
+        }
+        .slider_txt{
+            padding-top: 1.5rem;
+            font-weight: bold;
+            font-size: 1rem;
+            margin-right: 1rem;
+            position: relative;
+        }
+        .slider_txt::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2px;
+            height: 0.8rem;
+            background: black;
+        }
+        .slider_txt:last-of-type{
+            margin-right: 0;
+        }
+        .slider_txt:last-of-type::before{
+            left: auto;
+            right: 0;
+        }
+    }
+
 }

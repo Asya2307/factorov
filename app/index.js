@@ -1,7 +1,7 @@
 import './fonts.scss';
 import './index.scss';
 import 'normalize.css';
-
+const slider = require('./slider.js');
 
 document.addEventListener('DOMContentLoaded', function() {
     const checkboxManipulation = {
@@ -38,6 +38,9 @@ document.addEventListener('DOMContentLoaded', function() {
     'jQuery', 'Знаю/изучаю Angular', 'Знаю/изучаю React', 'Знаю/изучаю Node.js'];
 
     checkboxManipulation.checkboxGenerator('checkboxgen', checkboxArray);
+
+
+    const mysl1 = new slider('slidergen', 0, 100, 5);
 
  }, false);
 
